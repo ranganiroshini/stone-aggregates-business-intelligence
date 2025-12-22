@@ -19,26 +19,18 @@ st.markdown("""
 <style>
 
 /* =========================
-   GLOBAL TEXT VISIBILITY
    ========================= */
 html, body, [class*="css"] {
     font-size: 17px !important;
 }
-/* 1. EXPAND THE ENTIRE PAGE WIDTH */
-.block-container {
-    max-width: 98% !important;
-    padding-top: 1.5rem !important; /* Reduces the huge empty gap at the top */
-    padding-bottom: 0rem !important;
-}
 
-/* 2. MAKE THE TITLE HUGE & WIDE */
+/* 2. TITLE*/
 h1 {
-    font-size: 100px !important;  /* Super Big */
-    font-weight: 900 !important;   /* Extra Bold */
-    text-align: center !important; 
-    width: 100% !important;
-    margin-bottom: 0px !important;
-    line-height: 1.1 !important;
+    font-size: 56px !important;   
+    font-weight: 800 !important;
+    text-align: center !important;
+    margin-bottom: 8px !important;
+    line-height: 1.2 !important;
     letter-spacing: -3px !important; /* Tighter, more modern professional look */
     
     background: linear-gradient(to right, #64748b, #1e40af);
@@ -48,12 +40,11 @@ h1 {
 
 /* 3. ADD A SUBTITLE STYLE */
 .hero-subtitle {
-    font-size: 50px !important;
+    font-size: 26px !important;
     font-weight: 500 !important;
     color: #334155;
     text-align: center !important;
     margin-bottom: 40px !important;
-    width: 100% !important;
 }
 
 h2 {
@@ -138,24 +129,17 @@ section[data-testid="stSidebar"] * {
 /* =========================
    PAGE SPACING
    ========================= */
-.block-container {
-    padding-top: 2rem;
-}
 /* =========================
-   FULL-WIDTH LAYOUT FIX
+   
    ========================= */
-
-/* Expand main content area */
 .block-container {
-    max-width: 98% !important;
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
+    max-width: 1200px !important;
+    padding-top: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }
 
-/* Make tabs span full width */
-.stTabs {
-    width: 100% !important;
-}
+
 
 /* Ensure each tab content uses full width */
 .stTabs [data-testid="stHorizontalBlock"] {
