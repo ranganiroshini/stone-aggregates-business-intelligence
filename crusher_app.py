@@ -11,28 +11,28 @@ import re
 st.markdown('<h1>Stone Aggregates Business Intelligence Dashboard</h1>', unsafe_allow_html=True)
 st.markdown('<p class="hero-subtitle">Real Operational Data (2020–2024) with Forecasted Revenue & Pricing Trends</p>', unsafe_allow_html=True)
 
-# Add a horizontal line to separate the title from the data
-st.markdown("---")
-
 # Custom CSS for BOLD, LARGE METRICS and TAB SIZE
 st.markdown("""
 <style>
 
-/* =========================
-   ========================= */
+/* ========================= */
 html, body, [class*="css"] {
     font-size: 17px !important;
 }
 
 /* 2. TITLE*/
 h1 {
-    font-size: 56px !important;   
+    font-size: 56px !important;
     font-weight: 800 !important;
     text-align: center !important;
-    margin-bottom: 8px !important;
-    line-height: 1.2 !important;
-    letter-spacing: -3px !important; /* Tighter, more modern professional look */
-    
+
+    line-height: 1.45 !important;
+    padding-top: 24px !important;
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+
+    letter-spacing: -1.5px !important;
+
     background: linear-gradient(to right, #64748b, #1e40af);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@ h1 {
     font-weight: 500 !important;
     color: #334155;
     text-align: center !important;
-    margin-bottom: 40px !important;
+    margin-bottom: 22px !important;
 }
 
 h2 {
@@ -133,10 +133,14 @@ section[data-testid="stSidebar"] * {
    
    ========================= */
 .block-container {
-    max-width: 1200px !important;
+    max-width: 95% !important;
     padding-top: 1.5rem !important;
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
+}
+/* FIX STREAMLIT TOP PADDING (TITLE CUT ISSUE) */
+section.main > div:first-child {
+    padding-top: 0rem !important;
 }
 
 
